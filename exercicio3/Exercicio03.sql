@@ -84,7 +84,7 @@ WHERE cpf IN (
      
 	 SELECT cpf_paciente FROM prontuario 
 	 WHERE codigo_medico IN (
-	       SELECT codigo FROM medico WHERE nome = 'Vinicius Araujo'
+	       SELECT codigo FROM medico WHERE nome LIKE 'Vinicius%'
 	 )
 
 )
